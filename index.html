@@ -89,7 +89,9 @@ a <input id="qa" value="1" style="width:60px"> b <input id="qb" value="-5" style
 </section>
 
 <footer>李彦明 15684394135 · 数算子·数学专家团 · 离线单文件 · 每日升级
-<div style="background:#fffbe6;border-left:4px solid #f5a623;padding:10px;margin:12px 0;font-size:14px">📅 2026-10-05 升级 · 【练习+2026-10-05】竞赛题: 1/(1×2)+1/(2×3)+…+1/(n(n+1)) = ? (裂项相消 = n/(n+1))</div>
+<div style="background:#fffbe6;border-left:4px solid #f5a623;padding:10px;margin:12px 0;font-size:14px">📅 2026-10-08 升级 · 数算子·数学专家团第一版：题库 +2 竞赛高频（x³+y³=61 / 阶乘和153），公式速查 +2（和的立方、裂项相消）</div>
+
+<div style="background:#fffbe6;border-left:4px solid #f5a623;padding:10px;margin:12px 0;font-size:14px">📅 2026-10-08 升级 · 【练习+2026-10-08】易错题: 已知 a+b=5, ab=6, 求 a³+b³ = ? (a³+b³=(a+b)³-3ab(a+b)=49)</div>
 </footer>
 
 <script>
@@ -124,6 +126,8 @@ const QS=[
  ["竞赛","x² - 5x + 6 = 0 的根是?",["2 和 3","1 和 6","-2 和 -3","3 和 3"],0],
  ["竞赛","n! 末尾有几个 0 (n=25)?",["5","6","7","4"],1],
  ["竞赛","C(6,2) = ?",["15","30","12","45"],0],
+ ["竞赛","x+y=5, x*y=6, x³+y³ = ?",["110","61","36","15"],0],
+ ["竞赛","1!+2!+3!+...+5! = ?",["153","131","143","123"],0],
 ];
 let qs=0,qt=0,qi=0;
 function qNext(){
@@ -158,6 +162,8 @@ const FS=[
  ["概率","P(A∪B)=P(A)+P(B)-P(AB)  P(A|B)=P(AB)/P(B)"],
  ["复数","|a+bi|=√(a²+b²)  i⁴=1"],
  ["对数","logₐ(xy)=logₐx+logₐy  logₐxᵝ=βlogₐx"],
+ ["和的立方","(x+y)³=x³+y³+3xy(x+y)  x³+y³=(x+y)(x²-xy+y²)"],
+ ["裂项相消","1/(n(n+1))=1/n-1/(n+1)  Σ= n/(n+1)"],
 ];
 document.getElementById("calcGrid").innerHTML=FS.map(f=>`<div class="card"><h3>${f[0]}</h3><ul>${f[1].split("  ").map(x=>`<li>${x}</li>`).join("")}</ul></div>`).join("");
 
